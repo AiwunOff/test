@@ -1,0 +1,2 @@
+//afficher le fichier ini.php//
+php -i | grep php.ini

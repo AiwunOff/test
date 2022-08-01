@@ -1,0 +1,69 @@
+.mentions {
+    width: 100%;
+    height: auto;
+    padding: 30px 25%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.mentions h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mentions h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mentions h3,
+.mentions h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.mentions p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.mentions strong {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.mentions li {
+    margin: 10px 0;
+    line-height: 20px;
+    padding: 0;
+
+}
+
+.mentions li::before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+  }
+
+  @media (max-width: 1300px) {
+    .mentions {
+        padding: 30px 3%;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .mentions {
+        padding: 160px 3%;
+     }
+
+     .mentions li {
+        margin: 10px 0 0 0;
+    
+    }
+}

@@ -1,0 +1,58 @@
+#cours {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenaireModules {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 70% 28%;
+    column-gap: 2%;
+    width: 65%;
+    height: auto;
+    padding-top: 60px;
+    // border: blue dashed 2px;
+}
+
+.completSocial {
+    width: 100%;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3; 
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    // border: blue dashed 2px;
+}
+
+@media (max-width: 1700px) {
+    .contenaireModules {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .contenaireModules {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contenaireModules {
+        width: 98%;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .contenaireModules {
+        grid-template-rows: auto;
+        grid-template-columns: 98%;
+        column-gap: 0;
+    }
+
+    .completSocial {
+        grid-row: 5 / 6;
+        grid-column: 1 / 3; 
+    }
+}

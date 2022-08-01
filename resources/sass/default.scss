@@ -1,0 +1,410 @@
+$fa-font-path:        "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+
+//-------------------LIST.BLADE.PHP----------------------------------
+
+    
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    * {
+        box-sizing: border-box;
+        border: 0 solid #e2e8f0
+    }
+
+
+
+
+    /// container default.blade.php   ///////////////////////////////
+    /// aside menu
+    .containerAdmin {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-right: 50px;
+        // border: solid 5px blue;
+    }
+
+    .navAdmin {
+        border-right: solid 1px #e9e9e9;
+        height: 100vh;
+        width: 250px;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: scroll;
+        // border: solid 5px lime;
+    }
+
+    .navAdmin ul {
+        width: 250px;
+        list-style-type: none;
+        padding: 0;
+
+    }
+
+    .navAdmin li {
+        height: 70px;
+        width: 100%;
+        border-bottom: solid 1px #e9e9e9;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .activeAdmin {
+        background-color: #f7f7f7;
+        color: #292b2c;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .navAdmin a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .navAdmin .fas, .navAdmin .far {
+        margin-right: 15px;
+        background-color: rgba(255, 255, 255, 0.719);
+    }
+    //-----------------------------------------------------------------------
+    /// LIST ADMIN  right side-----------------------------------------------
+
+
+
+    // .nouveau {
+    //     background-color: #4d5051;
+    //     color: white;
+    //     font-weight: bold;
+    //     letter-spacing: 1px;
+    // }
+
+    .contenaire_list {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        padding: 0 30px;
+        // border: solid 5px blue;
+    }
+
+    .tabla_list {
+        width: 100%;
+    }
+
+    .contenaire_list_form  {
+        display: flex;
+        align-items: center;
+    }
+
+    .contenaire_list .contenaire_list_select {
+        width: 300px;
+        height: 40px;
+        border: solid 1px rgb(177, 177, 177);
+    }
+
+    .contenaire_list_submit {
+        width: 120px;
+        height: 40px;
+        background-color: transparent !important;
+        border: solid 1px rgb(177, 177, 177);
+    }
+
+    .tabla_list table {
+        border-spacing: 0 10px;
+        width: 100%;
+    }
+
+    .tabla_list td,
+    .tabla_list th {
+        padding-left: 5px;
+        min-width: 150px;
+    }
+
+    .tabla_list td {
+        border-bottom: solid 1px #f2f2f2;
+        height: auto;
+    }
+
+    .tabla_list th {
+        text-align: left;
+        background-color: #f4f4f5;
+        padding: 10px;
+        height: 50px;
+        color: rgb(82, 82, 82);
+    }
+
+    .supp {
+        background-color: #ce113ac4;
+        color: white;
+        font-size: 14px;
+        height: 45px;
+        width: 120px;
+        border-radius: 5px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .modif {
+        background-color: #085eaa;
+        color: white;
+        font-size: 14px;
+        height: 45px;
+        width: 120px;
+        border-radius: 5px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .gris {
+        background-color: #f0efef;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        height: 45px;
+        width: 120px;
+        border-radius: 5px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .td_Button {
+        padding: 0;
+        margin: 0;
+        width: 120px;  
+    }
+
+    .supp:hover, 
+    .modif:hover {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .gris:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .button_nouveau {
+        width: auto;
+        height: auto;
+        padding: 15px 25px;
+        // border-radius: 20px;
+        font-size: 16px;
+        margin: 30px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        transition: ease-out 0.1s;
+    }
+
+    .button_nouveau:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    .titre_list {
+        width: 70%;
+        display: block;
+    }
+
+    .upArrow {
+        margin-right: 7px;
+        color: blue;
+    }
+    
+    .downArrow {
+        margin-left: 7px;
+        color: blue;
+    }
+
+    .button_nouveau .fa-plus {
+        margin-right: 10px;
+        color: rgb(124, 124, 124);
+    }
+
+
+    ////form create     ////////////////////////////////////////////////
+
+    .edit form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .edit label,
+    .editQuiz label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        color: #5b5b5b;
+        width: auto;
+        /* border: solid red 1px; */
+    }
+
+    .edit {
+        margin-left: 300px;
+        margin-top: 50px;
+        width: 80%;
+        overflow: auto;
+        padding: 50px;
+        // position: absolute;
+        // top: 50px;
+        // left: 15%;
+        border: #e0e0e0 solid 1px;
+        border-radius: 5px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        // border: solid red 1px;
+    }
+
+
+    .edit input,
+    .editQuiz input,
+    .edit select {
+        margin: 0;
+        padding-left: 10px;
+        width: 100%;
+        height: 55px;
+        border: #e1e1e1 solid 1px;
+        border-radius: 5px;
+    }
+
+    .edit input[type=submit] { 
+        height: 45px;
+        width: 150px;
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: rgb(65, 133, 221);
+        color: white;
+        font-size: 16px;
+        // font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .alert {
+        margin-top: 10px;
+        color: red;
+    }
+
+    .edit p {
+        margin: 0;
+        padding: 0;
+    }
+    ////////////////  quiz form     /////////////////////////////@at-root
+
+    .editQuiz {
+        margin-left: 300px;
+        margin-top: 50px;
+        width: 80%;
+        overflow: auto;
+        padding: 50px;
+        border: #e0e0e0 solid 1px;
+        border-radius: 5px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        // border: solid red 1px;
+    }
+
+    .formquiz {
+        width: 100%;
+    }
+
+    .formQuiz {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        margin-top: 10px;
+        // border: solid red 1px;
+    }
+
+    .formQuiz h3{
+        width: 100%;
+        height: auto;
+    }
+
+    .formQuiz input[type=submit] {
+        margin: 0;
+        width: 60px;
+        height: 30px;
+        border: #e1e1e1 solid 1px;
+    }
+    #quizform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .endRight {
+        margin-left: auto;
+        margin-right: 10%;
+        height: 50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        // border: solid blue 3px;
+    }
+
+    .editQuiz input[type=radio],
+    .editQuiz input[type=checkbox] {
+        height: 18px;
+        width: 20px; 
+    }
+
+    .divradio{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .divradio label {
+        margin-right: 15px;
+    }
+
+    .editQuiz input[type=submit] { 
+        height: 45px;
+        width: 150px;
+        // margin-top: 30px;
+        border-radius: 5px;
+        background-color: rgb(65, 133, 221);
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }    
+    
+    .formQuiz input[type=submit] { 
+        height: 55px;
+        width: 150px;
+        padding: 15px 10px;
+        // margin-top: 30px;
+        border-radius: 5px;
+        background-color: #ce113ac4;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .formQuiz:nth-child(odd) {
+        background-color: rgb(253, 250, 250);
+
+    }
+ 

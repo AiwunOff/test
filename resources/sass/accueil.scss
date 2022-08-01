@@ -1,0 +1,167 @@
+@import '_variables';
+$padd: 20%;
+$top: 220px;
+   
+
+*:focus {
+    outline: none;
+}
+
+.contenairAccueil {
+    width: 100%;
+    height: 1080px;
+    margin-top: -200px;
+    margin-bottom: 140px;
+    background-image:  url(/storage/images/accueil3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+ }
+
+ .contenairAccueil h1 {
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    font-size: 20PX;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+    color: black;
+    border-top: #920000 solid 1px;
+    border-bottom:#920000 solid 1px;
+    padding: 10px 15px;
+ }
+
+.textAccueil1{
+    position: absolute;
+    top: $top;
+    left: $padd;
+    width: 64%;
+    font-family: 'Lato', sans-serif;
+    font-size: 160px;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+    // border: black solid 2px;
+}
+
+.textAccueil2{
+    position: absolute;
+    top: calc(#{$top} + 200px);
+    left: $padd;
+    width: 64%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 28px;
+    color:black;
+}
+
+
+.sousTextAccueil{
+    position: absolute;
+    top: calc(#{$top} + 250px);
+    right: $padd;
+    width: 64%;
+    height: auto;
+    text-align: right;
+    font-size: 180px;
+    font-weight: 700;
+    color:black;
+}
+
+
+#lienFormation{
+    border-radius: 5px;
+}
+
+#buttonAccueil:hover{
+    cursor: pointer;
+}
+
+#buttonAccueil{
+    position: absolute;
+    top: calc(#{$top} + 290px);
+    left: $padd;
+    width: auto;
+    height: 40px;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #920000;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+}
+
+.sociaux {
+    width: 140px;
+    position: absolute;
+    bottom: 80px;
+    right: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sociaux .fab, .sociaux .fas {
+    font-size: 22px;
+    color: black;
+}
+
+
+// .cardAccueil{
+//     position: absolute;
+//     bottom: -400px;
+//     width: 100%;
+//     height: 470px;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: flex-start;
+//     background-color:#f3f3f3;
+//     // background: rgba(255, 255, 255, 0.0);
+//     margin: 20px 0;
+// }
+
+// figure.card{
+//     width: 300px;
+//     height: 300px;
+//     margin: 0 20px;
+//     background: rgba(255, 255, 255, 0.0);
+// }
+
+// .card h2{
+//     width: 100%;
+//     padding: 10px;
+//     text-align: center;
+// }
+
+// .card p:nth-of-type(2){
+//     width: 100%;
+//     padding: 10px 30px;
+//     text-align: center;
+// }
+
+// .card p:first-child{
+//     width: 100%;
+//     height: 7px;
+// }
+
+// #p1{
+//     background-color: #593036;
+// }
+
+// #p2{
+//     background-color: #1EA0D9;
+// }
+
+// #p3{
+//     background-color: #1B698C;
+// }

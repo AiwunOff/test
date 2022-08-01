@@ -1,0 +1,4 @@
+[17-Apr-2021 17:31:20 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\Facades\Route' not found in /home/cp1267302p33/public_html/m-egalitefemmeshommes.org/mefh2/MEFH/routes/web.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/cp1267302p33/public_html/m-egalitefemmeshommes.org/mefh2/MEFH/routes/web.php on line 39

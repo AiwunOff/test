@@ -1,0 +1,203 @@
+$fa-font-path: "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+.contenairContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: Roboto,segoe ui, Helvetica,Arial,sans-serif;
+    // background-image:  url(/storage/images/contact.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // border: 1px solid rgb(161, 141, 141);
+}
+
+.contactHeader {
+    width: 100%;
+    padding: 20px;
+    // background-color: #450707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenairContact h1 {
+    width: 65%;
+    text-align: left;
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+}
+
+.sousContenairContact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.contenairCoordonees {
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.coordonnees {
+    width: 600px;
+    min-width: 300px;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    //   background-size: cover;
+    // background-position: bottom;
+    // background-image: url(/storage/images/imageContact.jpg);
+    // background-repeat: no-repeat;
+    // border: 1px solid rgb(0, 38, 255);
+}
+
+.coordonnees a,
+.coordonnees p {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.contenairForm {
+    width: 50%;
+    min-width: 300px;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contenairForm form {
+    margin: 120px 0 0 0;
+    width: 600px;
+    min-width: 300px;
+    padding: 20px 3%;
+    margin-left: 20px;
+    // border: 1px solid #CCC;
+    border-radius: 5px;
+    // border: 1px solid rgb(255, 0, 0);
+}
+
+.contenairForm form div {
+    width: 100%;
+}
+
+.contenairForm form div + div {
+    margin-top: 30px;
+}
+
+.contenairForm label {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contenairForm input {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.contenairForm input,
+.contenairForm textarea {
+    font: 16px sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 1px #032C45;
+}
+
+.contenairForm input:focus,
+.contenairForm textarea:focus {
+    border-color: rgb(97, 97, 97);
+}
+
+.contenairForm textarea {
+    vertical-align: top;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.contenairForm button {
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid 1px #032C45;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.coordonnees .fas,
+.coordonnees .far {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #032C45;
+}
+
+
+@media (max-width: 1300px) {
+    .sousContenairContact {
+        width: 98%;
+        height: auto;
+        padding: 50px 0;
+
+    }
+    
+    .contenairContact h1 {
+        width: 98%;
+    }
+    
+    
+}
+
+@media (max-width: 1000px) {
+    .contenairContact h1 {
+        margin: 180px auto 0 auto;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 2%;
+    }
+
+    .contenairCoordonees {
+        order: 2;
+        width: 100%;
+    }
+    
+    .contenairForm {
+        order: 1;
+        width: 100%;
+    }
+    
+    
+}
